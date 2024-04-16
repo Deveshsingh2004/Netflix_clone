@@ -128,12 +128,12 @@ export default function ManageAccounts() {
   }
 
   if (pageLoader) return <CircleLoader />;
-
+  const question = "Who's Watching?";
   return (
     <div className="min-h-screen flex justify-center flex-col items-center relative">
       <div className="flex justify-center flex-col items-center">
         <h1 className="text-white font-bold text-[54px] my-[36px]">
-          Who's Watching?
+          {question}
         </h1>
         <ul className="flex p-0 my-[25px]">
           {accounts && accounts.length
